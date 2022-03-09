@@ -16,12 +16,28 @@ public class FieldOfficerServiceImpl implements FieldOfficerService {
 	@Autowired
 	private FieldOfficerRepository fieldOfficerRepository;
 
+	/******************************************
+	 - Method Name      : saveEnquiryDetails
+	 - Input Parameters : EnquiryDetails enquiryDetails
+	 - Return type      : savedEnquiryDetails
+	 - Author           : padavala krishna prasad
+	 - Creation Date    : 06-03-2022
+	 - Description      : Inserting the EnquiryDetailsOfCustomer information entered by fieldOfficer into the database.
+	  ******************************************/
 	@Override
 	public EnquiryDetails saveEnquiryDetails(EnquiryDetails enquiryDetails) {
 		EnquiryDetails savedEnquiryDetails= fieldOfficerRepository.save(enquiryDetails);
 		return savedEnquiryDetails;
 	}
 
+	/******************************************
+	 - Method Name      : getCustomerById
+	 - Input Parameters : CustomerId 
+	 - Return type      : int
+	 - Author           : padavala krishna prasad
+	 - Creation Date    : 06-03-2022
+	 - Description      : Getting the EnquiryDetailsOfCustomer information entered by fieldOfficer into the database.
+	  ******************************************/
 	@Override
 	public EnquiryDetails getCustomerById(int customerId) throws CustomerNotFoundException {
 		Optional<EnquiryDetails> optionalEnquiryDetails = fieldOfficerRepository.findById(customerId);
@@ -31,6 +47,14 @@ public class FieldOfficerServiceImpl implements FieldOfficerService {
 		return optionalEnquiryDetails.get();
 	}
 
+	/******************************************
+	 - Method Name      : updateEnquiryDetails
+	 - Input Parameters : EnquiryDetails
+	 - Return type      : String
+	 - Author           : padavala krishna prasad
+	 - Creation Date    : 06-03-2022
+	 - Description      : Updating the EnquiryDetailsOfCustomer information entered by fieldOfficer into the database.
+	  ******************************************/
 	
 	@Override
 	public EnquiryDetails updateEnquiryDetails(EnquiryDetails enquiryDetails) {
