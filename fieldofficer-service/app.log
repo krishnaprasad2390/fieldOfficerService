@@ -1,0 +1,33 @@
+2022-03-09 12:57:22,942 INFO com.mortgage.fieldofficerservice.FieldofficerServiceApplication [restartedMain] Starting FieldofficerServiceApplication using Java 17.0.1 on LIN66017141 with PID 24856 (C:\Users\padakris\Documents\stsworkspace\sprint1\fieldofficer-service\target\classes started by padakris in C:\Users\padakris\Documents\stsworkspace\sprint1\fieldofficer-service)
+2022-03-09 12:57:22,944 INFO com.mortgage.fieldofficerservice.FieldofficerServiceApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-03-09 12:57:23,846 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2022-03-09 12:57:23,847 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-09 12:57:23,908 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/fieldOfficer] [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-03-09 12:57:24,038 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-09 12:57:24,071 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-09 12:57:24,178 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-09 12:57:24,252 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-03-09 12:57:24,494 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-03-09 12:57:24,514 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-09 12:57:24,893 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-09 12:57:24,912 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2022-03-09 12:57:25,003 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2022-03-09 12:57:25,005 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2022-03-09 12:57:25,029 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field fieldOfficerService in com.mortgage.fieldofficerservice.controller.FieldOfficerController required a bean of type 'com.mortgage.fieldofficerservice.service.FieldOfficerService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.mortgage.fieldofficerservice.service.FieldOfficerService' in your configuration.
+
